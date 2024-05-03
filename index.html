@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Sync</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <section class="user-info">
+            <label for="profilePic">
+                <img class="profilepic" id="profilePicDisplay" src="https://dummyimage.com/150x150/f1f1f1/fff" alt="Foto de Perfil">
+            </label>
+            <input type="file" id="profilePic" name="profilePic" accept="image/*" style="display: none;">
+            <div class="info">
+              <h2> <span id="nome">Enzo Bellussi</span></h2>
+              <p>Idade: <span id="idade">20</span></p>
+              <p>Endereço: <span id="endereco">Rua das cores, 123 - Parque Bonito - SP</span></p>
+              <p>Biografia: <span id="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span></p>
+          </div>
+          
+          
+        </section>
+        <section class="card">
+            <span class="title">Atualizar Informações</span>
+            <form id="updateForm" class="form">
+                <div class="group">
+                    <input placeholder="" type="text" id="novoNome" name="novoNome" required="">
+                    <label for="novoNome">Nome</label>
+                </div>
+                <div class="group">
+                    <input placeholder="" type="number" id="novaIdade" name="novaIdade" required="">
+                    <label for="novaIdade">Idade</label>
+                </div>
+                <div class="group">
+                  <input placeholder="" type="text" id="cep" name="cep" required="" maxlength="9" pattern="\d*">
+                  <label for="cep">CEP</label>
+                </div>
+                <div class="group">
+                  <input placeholder="" type="text" id="rua" name="rua" required="" style="width: 85%;">
+                  <input placeholder="" type="text" id="numero" name="numero" required="" style="width: 15%;">
+                  <label for="rua">Rua</label>
+                  <label for="numero">Número</label>
+              </div>
+              <div class="group">
+                  <input placeholder="" type="text" id="bairro" name="bairro" required="" style="width: 50%;">
+                  <input placeholder="" type="text" id="estado" name="estado" required="" style="width: 50%;">
+                  <label for="bairro">Bairro</label>
+                  <label for="estado">Estado</label>
+              </div>
+              
+                <div class="group">
+                    <textarea placeholder="" id="novaBio" name="novaBio" rows="5" required=""></textarea>
+                    <label for="novaBio">Biografia</label>
+                </div>
+                <button type="submit">Atualizar</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

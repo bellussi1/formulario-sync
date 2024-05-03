@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  line-height: calc(1em + 0.5rem);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'General Sans', sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  user-select: none;
+}
+
+button {
+  display: inline-block;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+
+
+
+
+
+.section {
+  margin-top: 5rem;
+}
+
+@media (min-width: 320px) {
+  .container {
+    max-width: 320px;
+  }
+}
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+/* sm */
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+
+
+
+.container {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  gap: 1rem;
+  
+}
+
+
+.user-info {
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+  margin-top: 24px;
+  padding: 20px;
+  max-width: 640px ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ text-align: center;
+}
+
+.user-info img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+
+}
+
+.update-form {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+.update-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.update-form input,
+.update-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.update-form button {
+  display: inline-block;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: -0.05em;
+  background-color: #007bff;
+  color: #f1f5f9;
+  padding: 0.5em 1em;
+  border-radius: 6px;
+ 
+  transition: all 0.3s;
+}
+
+.update-form button:hover {
+  transition: all 0.3s;
+  transform: translateY(-3px);
+  background-color: #0056b3;
+}
+
+.profilepic{
+  cursor: pointer;
+  transition: 0.1s all;
+}
+.profilepic:hover{
+  filter: brightness(70%);
+  transition: 0.1s all;
+}
+.card {
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+  max-width: 640px ;
+  background-color: #fff;
+ 
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.form {
+  
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  gap: 1rem;
+}
+
+.form .group label {
+  font-size: 14px;
+  color: rgb(99, 102, 102);
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background-color: #fff;
+  transition: all .3s ease;
+}
+
+.form .group input,
+.form .group textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  outline: 0;
+  width: 95%;
+  background-color: transparent;
+}
+
+.form .group input:placeholder-shown+ label, .form .group textarea:placeholder-shown +label {
+  top: 10px;
+  background-color: transparent;
+}
+
+.form .group input:focus,
+.form .group textarea:focus {
+  border-color: #3366cc;
+}
+
+.form .group input:focus+ label, .form .group textarea:focus +label {
+  top: -10px;
+  left: 10px;
+  background-color: #fff;
+  color: #3366cc;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.form .group textarea {
+  resize: none;
+  height: 100px;
+}
+
+.form button {
+  background-color: #3366cc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  width: 35%;
+}
+
+.form button:hover {
+  background-color: #27408b;
+}
+
